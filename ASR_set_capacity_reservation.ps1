@@ -1,3 +1,8 @@
+<#
+Synopsis: Attach a replicated VM to a Capacity Reservation Group.
+Description: Updates the replication protected item so that capacity is reserved during failover.
+#>
+
 # Define capacity reservation group
 
 param(

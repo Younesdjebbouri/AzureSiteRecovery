@@ -1,3 +1,8 @@
+<#
+Synopsis: Prepare the Recovery Services Vault for Azure Site Recovery.
+Description: Creates the fabric, protection containers, replication policy and mappings used by the other scripts.
+#>
+
 # Initial configuration of Azure Site Recovery
 
 param(

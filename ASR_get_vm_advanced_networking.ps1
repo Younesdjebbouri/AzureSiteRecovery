@@ -1,3 +1,8 @@
+<#
+Synopsis: Display advanced networking properties for a replicated VM.
+Description: Shows VM scale set information, NIC details and IP configuration from Azure Site Recovery.
+#>
+
 # Get advanced networking replication details for a VM
 
 param(

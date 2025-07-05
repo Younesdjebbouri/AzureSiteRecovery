@@ -1,3 +1,8 @@
+<#
+Synopsis: Synchronize ASG configuration between source and destination VMs during online failover.
+Description: Reads ASG assignments from the primary NIC and applies them to the replicated NIC.
+#>
+
 param(
   [Parameter(Mandatory = $true)][string]$sid, #ex: 8197d8ee-b7df-4b0a-bdaf-bd38b0f19aaf, subscription id
   [Parameter(Mandatory = $true)][string]$RgPrimaire, #ex: RG-TEst-ASR

@@ -1,3 +1,8 @@
+<#
+Synopsis: Export NIC settings for all VMs in a resource group.
+Description: Produces JSON files containing ASG and load balancer information, used by offline transfer scripts.
+#>
+
 param(
   [Parameter(Mandatory = $true)][string]$sid, #ex: 8197d8ee-b7df-4b0a-bdaf-bd38b0f19aaf, subscription id
   [Parameter(Mandatory = $true)][string]$RgName #ex: RG-test-asr

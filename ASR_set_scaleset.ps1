@@ -1,3 +1,8 @@
+<#
+Synopsis: Specify the destination VM scale set for a replicated VM.
+Description: Updates the replication protected item so failover creates the VM inside the provided VMSS.
+#>
+
 # Define destination scale set
 
 param(

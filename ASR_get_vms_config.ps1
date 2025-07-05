@@ -1,3 +1,8 @@
+<#
+Synopsis: List information about all VMs in a protection container.
+Description: Prints general, disk and networking properties for auditing purposes.
+#>
+
 # Overview of all VMs registered in a protection container
 
 param(
