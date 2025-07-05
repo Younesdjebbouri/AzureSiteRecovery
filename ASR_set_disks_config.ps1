@@ -1,3 +1,8 @@
+<#
+Synopsis: Update disk replication settings for a protected VM.
+Description: Adds new disks if needed and adjusts cache storage before applying the configuration.
+#>
+
 # Define replicated disks name and cache storage
 
 param(

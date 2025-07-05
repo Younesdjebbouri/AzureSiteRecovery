@@ -1,3 +1,8 @@
+<#
+Synopsis: Finalize VM registration after initial replication.
+Description: Waits for the first recovery point and then configures disks and networking options.
+#>
+
 # Steps to finish registration of a VM in ASR
 
 param(

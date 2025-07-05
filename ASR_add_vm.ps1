@@ -1,3 +1,8 @@
+<#
+Synopsis: Register a VM for replication in Azure Site Recovery.
+Description: Creates the replication protected item and associates networking and disks. Run after ASR_init.ps1.
+#>
+
 # Add a VM to Azure Site Recovery
 
 param(

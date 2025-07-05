@@ -1,3 +1,8 @@
+<#
+Synopsis: Start replication back to the primary zone after a failover.
+Description: Builds new replication settings and waits until the VM is protected again.
+#>
+
 # Reprotect after failover from recovery to main
 
 param(

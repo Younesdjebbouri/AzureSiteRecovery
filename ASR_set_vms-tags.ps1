@@ -1,3 +1,8 @@
+<#
+Synopsis: Update VM tags according to the active zone.
+Description: Helper used during failover to switch the disablestartandstop tag on virtual machines.
+#>
+
 param(
     [parameter(Mandatory=$true)][ValidateSet("integration","preproduction","production")]$Environnement,
     [parameter(Mandatory=$False)][switch]$VersZoneSecondaire,

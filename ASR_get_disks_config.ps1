@@ -1,3 +1,8 @@
+<#
+Synopsis: Build disk replication configuration objects.
+Description: Helper script used by other commands to prepare OS and data disk settings for A2A replication.
+#>
+
 # Obtain informations to replicate disks
 
 param(

@@ -1,3 +1,8 @@
+<#
+Synopsis: Apply ASG configuration on replicated NICs during offline failover.
+Description: Reads JSON files exported with Get_Vms_ASR_LB_Settings.ps1 and updates the destination NICs accordingly.
+#>
+
 param(
   [Parameter(Mandatory = $true)][string]$sid, #ex: 8197d8ee-bdff-4gba-bvds-bd38sdfvxvf3, subscription id
   [Parameter(Mandatory = $False)][string]$RgPrimaire, # resource group where VM are going to be updated

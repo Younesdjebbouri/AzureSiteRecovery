@@ -1,3 +1,8 @@
+<#
+Synopsis: Configure advanced network settings for failover and test failover.
+Description: Sets subnets, network security groups and optional accelerated networking for the replicated VM.
+#>
+
 # Set failover and test failover network settings
 
 param(

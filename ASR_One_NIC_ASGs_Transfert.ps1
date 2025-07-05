@@ -1,3 +1,8 @@
+<#
+Synopsis: Copy ASG configuration from one NIC to another.
+Description: Useful to manually synchronize security groups between two NICs. Use -Apply to commit changes.
+#>
+
 param(
   [Parameter(Mandatory = $true)][string]$sid, #ex: 8197d8ee-bdff-4gba-bvds-bd38sdfvxvf3, subscription id
   [Parameter(Mandatory = $true)][string]$NicSource,
