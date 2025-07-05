@@ -3,7 +3,6 @@ param(
   [Parameter(Mandatory = $False)][string]$RgPrimaire, # resource group where VM are going to be updated
   [Parameter(Mandatory = $true)][string]$RgDestination, # resource group where VM are replicated
   [Parameter(Mandatory = $False)][string]$CustomFilePath,
-  [Parameter(Mandatory = $False)][switch]$CentralServerOnly
 )
 
 function WriteLog
@@ -31,19 +30,7 @@ function WriteLog
 $ErrorActionPreference = "Stop"
 Set-AzContext -SubscriptionId $sid | Out-Null
 $extraArgs = @{}
-$VMQuery = "resources
-              | where type == 'microsoft.compute/virtualmachines' and resourceGroup == '$($RgPrimaire)'
-              | where tags['test-function'] == 'central'
-              | project name"
-$Centralname = (Search-AzGraph -Query $VMQuery).name
 $FileFilter = "*json"
-if($CentralServerOnly)
-{
-  $FileFilter = "$($Centralname).json"
-}
-else {
-  $extraArgs["Exclude"] = "$($Centralname).json"
-}
 
 if($CustomFilePath)
 {
